@@ -1,0 +1,1 @@
+<h2 class="font-black size-1.5 text-amber-700">home</h2>
