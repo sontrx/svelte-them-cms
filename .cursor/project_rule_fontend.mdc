@@ -1,0 +1,18 @@
+# Figma Design Implementation Rule
+
+When asked to implement a Figma design, the process is as follows:
+
+1. **Initial Layout (Step 1):**
+   - The user will provide a section image (called an "illustration") and a Figma link to the section node.
+   - Build the HTML and CSS based on the illustration image to match the appearance as closely as possible.
+   - Use Tailwind CSS version 4 for all CSS utility classes.
+   - Before styling, read the `main.css` file to acknowledge and utilize any existing CSS rules or variables.
+
+2. **Figma Data Correction (Step 2):**
+   - Once the user accepts the overall layout, use the provided Figma link to fetch specific design data (CSS variables, dimensions, SVGs, images) using the MCP Figma tool.
+   - List the fetched theme assets (variables, images, SVGs, etc.) to the user for preview.
+   - Replace the initial layout's approximations with the precise data from Figma, ensuring the overall look remains consistent but correctness is improved.
+
+The concept is to first match the look and feel using the illustration, then use Figma data for accuracy and correctness while preserving the established layout.
+alwaysApply: true
+---
