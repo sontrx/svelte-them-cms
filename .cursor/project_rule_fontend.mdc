@@ -1,17 +1,15 @@
-# Figma Design Implementation Rule
+# Figma Design Implementation Rules
 
-When asked to implement a Figma design, the process is as follows:
+When implementing a Figma design, follow these guidelines:
 
-1. **Initial Layout (Step 1):**
-   - The user will provide a section image (called an "illustration") and a Figma link to the section node.
-   - Build the HTML and CSS based on the illustration image to match the appearance as closely as possible.
-   - Use Tailwind CSS version 4 for all CSS utility classes.
-   - Before styling, read the `main.css` file to acknowledge and utilize any existing CSS rules or variables.
-
-2. **Figma Data Correction (Step 2):**
-   - Once the user accepts the overall layout, use the provided Figma link to fetch specific design data (CSS variables, dimensions, SVGs, images) using the MCP Figma tool.
-   - List the fetched theme assets (variables, images, SVGs, etc.) to the user for preview.
-   - Replace the initial layout's approximations with the precise data from Figma, ensuring the overall look remains consistent but correctness is improved.
+- Begin by matching the look and feel of the section using the provided illustration image and Figma link to the section node.
+- Build the HTML and CSS to closely resemble the appearance in the illustration image.
+- Use Tailwind CSS version 4 for all CSS utility classes.
+- Before styling, review the `main.css` file to acknowledge and utilize any existing CSS rules or variables.
+- After establishing the overall layout, if a Figma link is provided, use it to fetch specific design data (CSS variables, dimensions, SVGs, images) using the MCP Figma tool.
+- Preview the fetched theme assets (variables, images, SVGs, etc.) and incorporate them as needed.
+- When using the Figma MCP tool to download images, always use an absolute path to store them, as the MCP may run in a different relative path.
+- Replace any initial layout approximations with precise data from Figma, ensuring the overall look remains consistent while improving accuracy and correctness.
 
 The concept is to first match the look and feel using the illustration, then use Figma data for accuracy and correctness while preserving the established layout.
 alwaysApply: true
